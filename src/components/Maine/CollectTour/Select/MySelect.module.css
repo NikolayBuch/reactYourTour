@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 500px;
+  height: 104px;
+}
+.select {
+  margin-top: 8px;
+}
+.select {
+  padding-left: 20px;
+  appearance: none;
+  overflow: hidden;
+  background: #f9f7f4 url("../../../../../public/img/svg/ic-dropdown.svg")
+    no-repeat right;
+  background-size: 5%;
+  background-position: 454px 21px;
+  width: 500px;
+  height: 68px;
+  border-radius: 10px;
+  border: none;
+}
+.select:invalid {
+  color: #a6a6a6;
+  padding-left: 20px;
+  appearance: none;
+  overflow: hidden;
+  background: #f9f7f4 url("../../../../../public/img/svg/ic-dropdown.svg")
+    no-repeat right;
+  background-size: 5%;
+  background-position: 454px 21px;
+}
+@media (min-width: 1025px) {
+  select:hover {
+    background: #f4f0e9 url("../../../../../public/img/svg/ic-dropdown.svg")
+      no-repeat right;
+    background-size: 5%;
+    background-position: 454px 21px;
+  }
+}
+@media (max-width: 1200px) {
+  .select {
+    width: 389px;
+    height: 68px;
+    border-radius: 10px;
+    border: none;
+    background: #f9f7f4 url("../../../../../public/img/svg/ic-dropdown.svg")
+      no-repeat right;
+    background-size: 7%;
+    background-position: 347px 21px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 389px;
+    height: 104px;
+  }
+}
+@media (max-width: 450px) {
+  .select {
+    width: 278px;
+    height: 43px;
+    border-radius: 10px;
+    background: #f9f7f4 url("../../../../../public/img/svg/ic-dropdown.svg")
+      no-repeat right;
+    background-size: 8%;
+    background-position: 246px 11px;
+    border: none;
+  }
+  .container {
+    padding: 0px;
+    width: 278px;
+    height: 74px;
+  }
+}

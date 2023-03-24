@@ -1,0 +1,127 @@
+.cards{
+    width: 370px;
+    height: 531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+    background: linear-gradient(360deg, 
+    rgba(0, 0, 0, 0.4) 0%, 
+    rgba(0, 0, 0, 0.06) 48.44%, 
+    rgba(0, 0, 0, 0.5) 100%);
+    position: relative;
+}
+.fon{
+    position: absolute;
+    transform: scale(1);
+    transition: transform 300ms ease;
+    z-index: -1;
+    width: 100%;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;    
+}
+@media (min-width:1025px){
+    .cards:hover{
+    cursor: pointer;
+    }
+    .cards:hover .fon{
+        transform: scale(1.2);
+    }
+    .cards:hover button {
+        background: #286562;
+        cursor: pointer;
+    }
+}
+.cards:active .cards-more__button {
+    background: #EFA501;
+}
+.info{ 
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+}
+.header{
+    width: 270px;
+    height: 86px;
+    color: #fff;
+    margin-bottom: 16px;
+
+}
+.price{
+    width: 270px;
+    height: 24px;
+    color: #fff;
+}
+.more{
+    padding: 0 0 43px 29px;
+}
+.more__button {
+    width: 199px;
+    height: 42px;
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.more__button  img{
+    margin-left: 10px;
+}
+@media (max-width:1200px){
+    .cards{
+        width: 451px;
+        height: 531px;
+    }
+    .header{
+        width: 339px;
+        height: 42px;
+    }
+}
+@media (max-width:450px){
+    .tour{
+        height: 1998px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        width: 318px;
+        height: 318px;
+        border-radius: 20px;
+    }
+    .info{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .header{
+        width: 268px;
+        height: 28px;
+        margin: 0px 0px 13px 0px;
+    }
+    .price{
+        width: 268px;
+        height: 23px;
+    }
+    .more{
+        padding: 0 0 0 1px;
+    }
+    .more__button {
+        margin-bottom: 25px;
+        margin-left: 25px;
+        width: 123px;
+        height: 26px;
+    }
+    .cards-more__button  img{
+        margin-left: 16px;
+    }
+}

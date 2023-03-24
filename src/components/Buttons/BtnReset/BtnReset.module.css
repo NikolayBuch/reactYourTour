@@ -1,0 +1,24 @@
+.reset{
+    width: 235px;
+    height: 58px;
+    background: #E0F0E5;
+    border-radius: 10px;
+    color: #286562;
+    border: none;
+}
+.reset:active{
+    background: #D9DFDB;
+}
+@media (min-width:1025px){
+   
+    .reset:hover{
+        background: #F1F3F2;
+        cursor: pointer;
+    }
+}
+@media (max-width:450px){
+    .reset{
+            width: 134px;
+            height: 47px; 
+        }
+    }

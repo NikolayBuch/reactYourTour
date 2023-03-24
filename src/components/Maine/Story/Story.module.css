@@ -1,0 +1,193 @@
+.container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.story{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story-cards{
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    width: 1170px;
+    height: 567px;
+    background: linear-gradient(270deg,
+     rgba(0, 0, 0, 0) 0.01%,
+     rgba(0, 0, 0, 0.2) 100%);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    z-index: 1;
+}
+.story-cards:nth-child(2){
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.story-cards__info{
+    display: flex;
+    flex-direction: column;
+    color: #F1F3F2;
+    width: auto;
+    height: auto;
+    padding-left: 60px;
+    padding-top: 57px;
+    padding-bottom: 30px;
+}
+.story-cards__info p{
+    width: 554px;
+    height: auto;
+    margin-top: 37px;
+}
+.story-cards__info ul{
+    margin: 27px 0px 0 31px;
+}
+.story-cards__btn{
+    width: 1129px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 57px 41px;
+}
+.story-cards__link{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 322px;
+    height: 28px;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+.story-cards__link a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 35px;
+}
+
+.story-cards:active .cards-more__button {
+    background: #EFA501;
+}
+@media (min-width:1025px){
+    .story-cards:hover .cards-fon{
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+        .story-cards:hover .cards-more__button {
+            background: #286562;
+            cursor: pointer;
+        }
+        .story-cards__link a:hover{
+            text-decoration-line: underline;
+            cursor: pointer;
+            text-underline-position: under;
+        }
+}
+.story-cards__link a:active{
+    text-decoration-line: underline;
+    color: #EFA501;
+}
+@media(max-width:1200px){
+    .story-cards{
+        display: flex;
+        position: relative;
+        border-radius: 50px;
+        width: 918px;
+        height: 567px;
+        background: linear-gradient(270deg,
+         rgba(0, 0, 0, 0) 0.01%,
+         rgba(0, 0, 0, 0.2) 100%);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .story-cards__info{
+        display: flex;
+        flex-direction: column;
+        color: #F1F3F2;
+        width: auto;
+        height: 394px;
+        padding-left: 60px;
+        padding-top: 57px;
+        padding-bottom: 30px;
+    }
+    .story-cards__info p{
+        width: 554px;
+        height: 113px;
+    }
+    .story-cards__btn{
+        width: 877px;
+        height: 88px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 36px 39px;
+    }
+    .story-cards__link{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 322px;
+        height: 28px;
+        justify-content: flex-end;
+        margin-right: 60px;
+    }
+    .story-cards__link a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .story-cards:active .cards-more__button {
+        background: #EFA501;
+    }
+    .story-cards__link a:active{
+        text-decoration-line: underline;
+        color: #EFA501;
+    }
+    .story-cards__info ul {
+        margin: 27px 0px 0 29px;
+    }
+}
+@media (max-width:450px){
+    .story-cards{
+        border-radius: 20px;
+        height: 455px;
+        width: 318px;
+    }
+    .story-cards:nth-child(2){
+        margin: 20px 0 20px 0;
+    }
+    .story-cards__info{
+        height: 306px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .story-cards h3{
+        width: 121px;
+    }
+    .story-cards__info p{
+        width: 263px;
+        height: 230px;
+        margin-top: 22px;
+    }
+    .story-cards__info ul {
+        margin: 24px 0px 0 24px;
+    }
+    .story-cards__btn{
+        width: 130px;
+        height: 26px;
+        margin-bottom: 17px;
+        margin-left: 0px;
+        padding: 0 0 0 6px;
+    }
+    .story-cards__link{
+        display: none;
+    }
+}

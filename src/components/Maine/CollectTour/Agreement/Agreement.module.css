@@ -1,0 +1,75 @@
+.agreement{
+    width: auto;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+.agreement label{
+    color: #A6A6A6;
+}
+.checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.checkbox+label:before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #1B1F2B;;
+    border-radius: 0.25em;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+.checkbox:checked+label:before {
+    border-color: #1B1F2B;
+    background-image: url(../../../../../public/img/svg/chack.svg);
+}
+.agreement a{
+    text-decoration: none;
+    color: #1B1F2B;
+}
+@media (min-width:1025px){
+.agreement a:hover{
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    }
+}
+.agreement a:active{
+    text-decoration-line: underline;
+    color: #286562;
+}
+@media(max-width:1200px){
+    .checkbox+label:before {
+           margin-right: 9px;
+       }
+   }
+   @media (max-width:450px){
+
+    .agreement{
+        width: 278px;
+        height: 69px;
+        margin-bottom: 30px;
+    }
+    .agreement p{
+        width: 223px;
+    }
+       .checkbox+label {
+           align-items: flex-start;
+       }
+       .checkbox+label:before {
+           width: 16px;
+           height: 16px;
+         }
+   }
