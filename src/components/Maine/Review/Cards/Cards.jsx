@@ -19,7 +19,7 @@ const cards = ({review}) => {
                                 Тур: {review.nameTour}
                             </p>
                         </div>
-                        <img src={`/img/png/${review.avatar}`}alt="avatar__review"/>
+                        <img src={`./img/png/${review.avatar}`}alt="avatar__review"/>
                     </div>
                 </div>
 

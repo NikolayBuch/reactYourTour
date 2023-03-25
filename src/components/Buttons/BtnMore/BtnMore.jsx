@@ -6,7 +6,7 @@ import cx from 'classnames'
 const BtnMore = () => {
 	return (
 		<div>
-			<button className={cx(s.button, st.pBig)}>Подробнее<img src='/img/svg/Arrow.svg' alt="arrow"/></button>
+			<button className={cx(s.button, st.pBig)}>Подробнее<img src='./img/svg/Arrow.svg' alt="arrow"/></button>
 		</div>
 	);
 };

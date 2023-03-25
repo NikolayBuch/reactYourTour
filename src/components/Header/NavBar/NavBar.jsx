@@ -9,7 +9,7 @@ const NavBar = () => {
 		<div>
 			<nav className={s.navbar}>
             <div className={s.container}>
-                <a href="#top"><img src="/img/png/logo.png"alt="YourTour"/></a>
+                <a href="#top"><img src="./img/png/logo.png"alt="YourTour"/></a>
                 <div className={cx(s.menu, st.pNormal )}>
                     <ul className={s.menu__container}>
                         <li><a href="#tours">Туры</a></li>
