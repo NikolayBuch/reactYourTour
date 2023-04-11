@@ -1,0 +1,69 @@
+@import '../../../styles/fontMixins.scss';
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 500px;
+  height: 104px;
+}
+.customInput {
+  outline: none;
+  border: #f4f0e9;
+  width: 500px;
+  height: 68px;
+  border-radius: 10px;
+  background: #f9f7f4;
+  border: 1px solid #f4f0e9;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  @include fontPNormal;
+  @media (min-width: 1025px) {
+    &:hover {
+      background: #f4f0e9;
+      border: 1px solid #f4f0e9;
+    }
+  }
+  &:focus {
+    color: #1b1f2b;
+    border: 1px solid #a6a6a6;
+  }
+}
+.label {
+  display: block;
+  color: #1b1f2b;
+}
+
+@media (max-width: 1200px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 389px;
+    height: 104px;
+  }
+  .customInput {
+    width: 389px;
+    height: 68px;
+    border-radius: 10px;
+    background: #f9f7f4;
+    border: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 450px) {
+  .root {
+    padding: 0px;
+    width: 278px;
+    height: 74px;
+  }
+  .customInput {
+    width: 278px;
+    height: 43px;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+}

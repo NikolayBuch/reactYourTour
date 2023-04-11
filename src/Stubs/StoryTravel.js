@@ -1,4 +1,4 @@
-export const StoryTravel = [
+export const storyTravel = [
   {
     id: 1,
     title: "Автостопом в Стамбул",

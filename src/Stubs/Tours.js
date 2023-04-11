@@ -1,4 +1,4 @@
-export const Tours = [
+export const tours = [
 	{
 		id: 1,
 		img: "card-tour-photo-1.png",

@@ -1,0 +1,28 @@
+@mixin fontPBig {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+  @media (max-width: 450px) {
+    font-size: 16px;
+    line-height: 142%;
+  }
+}
+@mixin fontPNormal {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  @media (max-width: 450px) {
+    font-size: 16px;
+    line-height: 142%;
+  }
+}
+@mixin fontPSmall {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  @media (max-width: 450px) {
+    font-size: 16px;
+    line-height: 142%;
+  }
+}
