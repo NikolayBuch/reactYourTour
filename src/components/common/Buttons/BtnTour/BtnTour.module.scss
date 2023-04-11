@@ -11,7 +11,6 @@
   @media (max-width: 450px) {
     width: 134px;
     height: 47px;
-    margin-right: 9px;
   }
   @include fontPNormal;
 }
@@ -29,6 +28,12 @@
     }
     &:active {
       background: #627f7e;
+    }
+    @media (max-width: 1200px) {
+      margin-right: 29px;
+    }
+    @media (max-width: 450px) {
+      margin-right: 9px;
     }
   }
   &-reset {
