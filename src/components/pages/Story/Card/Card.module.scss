@@ -1,4 +1,3 @@
-@import '../../../../styles/fontMixins.scss';
 .root {
   display: flex;
   position: relative;
@@ -33,11 +32,9 @@
     width: 554px;
     height: auto;
     margin-top: 37px;
-    @include fontPNormal;
   }
   ul {
     margin: 27px 0px 0 31px;
-    @include fontPNormal;
   }
 }
 
@@ -57,7 +54,6 @@
   height: 28px;
   justify-content: flex-end;
   margin-right: 60px;
-  @include fontPNormal;
   a {
     text-decoration: none;
     color: #ffffff;

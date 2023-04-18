@@ -2,6 +2,7 @@ import React from 'react';
 import BtnMore from '../../../common/Buttons/BtnMore/BtnMore';
 import s from './Card.module.scss';
 import Link from './Link';
+import Text from 'components/common/Text';
 
 const Cards = ({ item }) => {
   const links = item.link;
@@ -13,16 +14,20 @@ const Cards = ({ item }) => {
       <img src={`./img/png/${item.img}`} alt='story ' className={s.fon} />
       <div className={s.info}>
         <h3>{item.title}</h3>
-        <p>{item.description}</p>
-        {list !== '' ? <ul>{listItem}</ul> : ''}
+        <Text>
+          <p>{item.description}</p>
+          {list !== '' ? <ul>{listItem}</ul> : ''}
+        </Text>
+        
       </div>
       <div className={s.btn}>
         <BtnMore />
-        <div className={s.link}>
+        <Text className={s.link}>
           {links.map((link) => (
             <Link link={link} key={link.id} />
           ))}
-        </div>
+        </Text>
+        
       </div>
     </div>
   );

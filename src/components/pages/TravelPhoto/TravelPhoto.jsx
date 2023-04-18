@@ -33,17 +33,17 @@ const TravelPhoto = () => {
       <div className={s.photoBlok}>
         <div className={cx(s.block, s.disable1)}>
           {blok1.map((block) => (
-            <ImageB1 block={block} key={block.id} />
+            <ImageB1 block={block} key={block.id} line='1'/>
           ))}
         </div>
         <div className={cx(s.block, s.disable2)}>
           {blok2.map((block) => (
-            <ImageB2 block={block} key={block.id} />
+            <ImageB1 block={block} key={block.id} line='2'/>
           ))}
         </div>
         <div className={cx(s.block, s.disable3)}>
           {blok3.map((block) => (
-            <ImageB1 block={block} key={block.id} />
+            <ImageB1 block={block} key={block.id} line='1'/>
           ))}
         </div>
       </div>

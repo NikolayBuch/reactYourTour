@@ -1,4 +1,3 @@
-@import '../../../../styles/fontMixins.scss';
 .root {
   width: 370px;
   height: 531px;
@@ -61,7 +60,6 @@
   width: 270px;
   height: 24px;
   color: #fff;
-  @include fontPSmall;
 }
 .more {
   padding: 0 0 43px 29px;

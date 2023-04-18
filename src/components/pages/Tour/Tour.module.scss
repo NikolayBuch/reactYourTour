@@ -24,7 +24,6 @@
   list-style-type: none;
   display: flex;
   margin: 6px 0px 6px 33px;
-  @include fontPBig;
   li:first-child a {
     text-decoration: underline;
     text-underline-position: under;

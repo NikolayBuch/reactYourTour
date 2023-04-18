@@ -50,3 +50,22 @@
     }
   }
 }
+.fw {
+  &-about {
+    width: 118px;
+    height: 34px;
+    background: #ffffff;
+    color: black;
+    &:active {
+      background: #f8e6be;
+      color: #fff;
+    }
+    @media (min-width: 1025px) {
+      &:hover {
+        background: #efa501;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}

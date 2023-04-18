@@ -1,4 +1,3 @@
-@import '../../../../styles/fontMixins.scss';
 .root {
   width: 570px;
   height: 673px;
@@ -21,7 +20,6 @@
   height: 448px;
   margin-top: 37px;
   margin-left: 42px;
-  @include fontPBig;
 }
 .name {
   display: flex;
@@ -38,9 +36,6 @@
   div {
     width: 415px;
     height: 75px;
-  }
-  p {
-    @include fontPSmall;
   }
 }
 

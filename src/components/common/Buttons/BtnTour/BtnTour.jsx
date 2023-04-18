@@ -1,17 +1,19 @@
 import React from 'react';
 import s from './BtnTour.module.scss';
 import cx from 'classnames';
+import Text from 'components/common/Text';
 
-import modsClasses from '../../../../utils/modsClasses';
+import modsClasses from 'utils/modsClasses';
 
-const BtnTour = ({ value, type }) => {
+const BtnTour = ({ value, type, fw, size }) => {
   const mods = modsClasses(s, {
     type,
+    fw,
   });
 
   return (
     <button className={cx(s.root, mods)} type={type}>
-      {value}
+      <Text size={size}>{value}</Text>
     </button>
   );
 };
