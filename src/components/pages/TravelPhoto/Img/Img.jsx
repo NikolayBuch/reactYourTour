@@ -3,7 +3,7 @@ import s from './Image.module.scss';
 import modsClasses from 'utils/modsClasses';
 import cx from'classnames';
 
-const ImageB1 = ({ block, line}) => {
+const Img = ({ block, line}) => {
   const mods = modsClasses(s, {
     line
   });
@@ -17,4 +17,4 @@ const ImageB1 = ({ block, line}) => {
   );
 };
 
-export default ImageB1;
+export default Img;

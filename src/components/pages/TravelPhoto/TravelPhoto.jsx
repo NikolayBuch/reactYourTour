@@ -3,8 +3,7 @@ import BlockName from '../../common/BlockName';
 import s from "./TravelPhoto.module.scss";
 import cx from "classnames";
 import { gallery } from "../../../stubs/gallery";
-import ImageB1 from "./Img/ImageB1";
-import ImageB2 from "./Img/ImageB2";
+import ImageB1 from "./Img/Img";
 
 const TravelPhoto = () => {
 
