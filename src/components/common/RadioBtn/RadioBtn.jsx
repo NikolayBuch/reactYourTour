@@ -1,9 +1,10 @@
 import React from 'react';
 import s from './RadioBtn.module.scss';
+import Text from 'components/common/Text';
 
 const RadioBtn = ({ label, value }) => {
   return (
-    <div className={s.root}>
+    <Text className={s.root}>
       <input
         type='radio'
         value={value}
@@ -12,7 +13,7 @@ const RadioBtn = ({ label, value }) => {
         name='answer'
       />
       <label htmlFor={value}>{label}</label>
-    </div>
+    </Text>
   );
 };
 

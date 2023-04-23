@@ -1,0 +1,155 @@
+@import 'styles/media.scss';
+.root {
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  width: 1170px;
+  height: 567px;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0.01%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  z-index: 1;
+  &:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @include media(lg) {
+    width: 918px;
+    height: 567px;
+  }
+  @include media(sm) {
+    border-radius: 20px;
+    height: 455px;
+    width: 318px;
+    &:nth-child(2) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      width: 121px;
+    }
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  color: #f1f3f2;
+  width: auto;
+  height: auto;
+  padding-left: 60px;
+  padding-top: 57px;
+  padding-bottom: 30px;
+  @include media(lg) {
+    height: 394px;
+  }
+  @include media(sm) {
+    height: 306px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  p {
+    width: 554px;
+    height: auto;
+    margin-top: 37px;
+    @include media(lg) {
+      width: 554px;
+      height: 113px;
+    }
+    @include media(sm) {
+      width: 263px;
+      height: 136px;
+      margin-top: 22px;
+    }
+  }
+  ul {
+    margin-top: 27px;
+    margin-left: 31px;
+    @include media(lg) {
+      margin-left: 29px;
+    }
+    @include media(sm) {
+      margin-top: 24px;
+      margin-left: 24px;
+    }
+  }
+}
+
+.btn {
+  width: 1129px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 57px 41px;
+  @include media(lg) {
+    width: 877px;
+    height: 88px;
+    padding: 0 0 36px 39px;
+  }
+  @include media(sm) {
+    width: 130px;
+    height: 26px;
+    margin-bottom: 17px;
+    margin-left: 0px;
+    padding: 0 0 0 6px;
+    button {
+      margin-bottom: 25px;
+      margin-left: 25px;
+    }
+  }
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 322px;
+  height: 28px;
+  justify-content: flex-end;
+  margin-right: 60px;
+  @include media(sm) {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 35px;
+    &:active {
+      text-decoration-line: underline;
+      color: #efa501;
+    }
+  }
+}
+.fon {
+  position: absolute;
+  transform: scale(1);
+  transition: transform 300ms ease;
+  z-index: -1;
+  width: 100%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.root:active button:active {
+  background: #efa501;
+}
+@media (min-width: 1025px) {
+  .root:hover .fon {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .root:hover button {
+    background: #286562;
+    cursor: pointer;
+  }
+  .link a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-underline-position: under;
+  }
+}

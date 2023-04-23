@@ -1,4 +1,4 @@
-@import '../../../styles/fontMixins.scss';
+@import 'styles/media.scss';
 .root {
   display: flex;
   width: 1030px;
@@ -6,8 +6,15 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 33px;
+  @include media(lg) { 
+    width: 798px;
+  }
+  @include media(sm) {
+    width: 278px;
+    height: 163px;
+    margin-bottom: 28px;
+  }
 
-  @include fontPNormal;
   textarea {
     width: 1030px;
     height: 152px;
@@ -18,40 +25,18 @@
     padding: 20px;
     box-sizing: border-box;
     margin-top: 8px;
-
-    @include fontPNormal;
     @media (min-width: 1025px) {
       &:hover {
         background: #f4f0e9;
         border: 1px solid #a6a6a6;
       }
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .root {
-    display: flex;
-    width: 798px;
-    height: 188px;
-    flex-direction: column;
-    justify-content: space-between;
-    textarea {
+    @include media(lg) {
       width: 798px;
-      height: 152px;
-      border: none;
       background: #f9f7f4;
       border-radius: 10px;
     }
-  }
-}
-@media (max-width: 450px) {
-  .root {
-    width: 278px;
-    height: 163px;
-    margin-bottom: 28px;
-
-    textarea {
+    @include media(sm) {
       width: 278px;
       height: 132px;
     }

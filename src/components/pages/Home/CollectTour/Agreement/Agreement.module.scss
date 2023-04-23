@@ -1,0 +1,73 @@
+@import 'styles/media.scss';
+.root {
+  width: auto;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+  @include media(sm) {
+    width: 278px;
+    height: 69px;
+    margin-bottom: 30px;
+    p {
+      width: 223px;
+    }
+  }
+  label {
+    color: #a6a6a6;
+  }
+  a {
+    text-decoration: none;
+    color: #1b1f2b;
+    @media (min-width: 1025px) {
+      &:hover {
+        text-decoration-line: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+  &:active {
+    text-decoration-line: underline;
+    color: #286562;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    @include media(sm) {
+      align-items: flex-start;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 2px solid #1b1f2b;
+      border-radius: 0.25em;
+      margin-right: 19px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50%;
+      @include media(lg) {
+        margin-right: 9px;
+      }
+      @include media(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.checkbox:checked + label:before {
+  border-color: #1b1f2b;
+  background-image: url(../../../../../../public/img/svg/chack.svg);
+}

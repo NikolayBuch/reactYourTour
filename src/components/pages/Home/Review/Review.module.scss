@@ -1,0 +1,27 @@
+@import 'styles/media.scss';
+.root {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.wraps {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: auto;
+  height: 673px;
+
+  @include media(lg) {
+    height: 841px;
+  }
+  @include media(sm) {
+    flex-direction: column;
+    width: 360px;
+    height: 1018px;
+    align-items: center;
+  }
+}

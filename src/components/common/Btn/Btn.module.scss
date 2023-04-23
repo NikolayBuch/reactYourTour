@@ -1,0 +1,99 @@
+@import 'styles/media.scss';
+.root {
+  width: 235px;
+  height: 58px;
+  border-radius: 10px;
+  border: none;
+  @include media(lg) {
+    margin-right: 29px;
+  }
+  @include media(sm) {
+    width: 134px;
+    height: 47px;
+  }
+}
+.type {
+  &-submit {
+    background: #286562;
+    color: #ffffff;
+    margin-right: 30px;
+    @media (min-width: 1025px) {
+      &:hover {
+        background: #3b7e7b;
+        cursor: pointer;
+      }
+    }
+    &:active {
+      background: #627f7e;
+    }
+    @include media(lg) {
+      margin-right: 29px;
+    }
+    @include media(sm) {
+      margin-right: 9px;
+    }
+  }
+  &-reset {
+    background: #e0f0e5;
+    color: #286562;
+    @media (min-width: 1025px) {
+      &:hover {
+        background: #f1f3f2;
+        cursor: pointer;
+      }
+    }
+    &:active {
+      background: #d9dfdb;
+    }
+  }
+}
+.color {
+  &-about {
+    width: 118px;
+    height: 34px;
+    background: #ffffff;
+    color: black;
+    &:active {
+      background: #f8e6be;
+      color: #fff;
+    }
+    @media (min-width: 1025px) {
+      &:hover {
+        background: #efa501;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  &-icon {
+    width: 199px;
+    height: 42px;
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    img {
+      margin-left: 10px;
+    }
+    &:hover {
+      background: #286562;
+      cursor: pointer;
+    }
+    &:active {
+      background: #efa501;
+    }
+  }
+  @include media(sm) {
+    margin-bottom: 25px;
+    margin-left: 25px;
+    width: 123px;
+    height: 26px;
+    img {
+      margin-left: 16px;
+    }
+  }
+}

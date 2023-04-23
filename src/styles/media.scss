@@ -1,0 +1,22 @@
+@use 'sass:map';
+$breakpoints: (
+  lg: 1199,
+  sm: 450,
+) !default;
+
+
+$media-direction: max !default;
+
+@function getMediaSize($direction, $screen) {
+  @if ($direction == min) {
+    @return map.get($breakpoints,  $screen) - 1;
+  }
+
+  @return map.get($breakpoints,  $screen);
+}
+
+@mixin media($screen, $direction: max) {
+  @media (#{$direction}-width: getMediaSize($breakpoints,  $screen) + 'px') {
+    @content;
+  }
+}

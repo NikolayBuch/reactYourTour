@@ -1,7 +1,6 @@
-@import '../../../styles/fontMixins.scss';
+@import 'styles/media.scss';
 .root {
   margin-right: 30px;
-  @include fontPNormal;
 }
 .radio {
   position: absolute;
@@ -24,6 +23,10 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50%;
+      @include media(sm) {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
   &:checked + label::before {
@@ -32,15 +35,5 @@
   }
   &:disabled + label::before {
     border-color: #1b1f2b;
-  }
-}
-
-@media (max-width: 450px) {
-  .root label {
-    margin-right: 32px;
-  }
-  .radio + label::before {
-    width: 16px;
-    height: 16px;
   }
 }

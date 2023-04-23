@@ -1,17 +1,32 @@
+@import 'styles/media.scss';
 .root {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   margin: 0 0 0 182px;
+
+  @include media(lg) {
+    margin: 0 0 0 82px;
+  }
+  @include media(sm) {
+    margin: 0 0 0 0;
+  }
 }
 .container {
   list-style-type: none;
   display: flex;
   align-items: center;
 
+  @include media(sm) {
+    display: none;
+  }
+
   li {
     margin-right: 50px;
     white-space: nowrap;
+    @include media(lg) {
+      margin-right: 30px;
+    }
 
     a {
       text-decoration: none;
@@ -34,31 +49,15 @@
   margin-left: 134px;
   white-space: nowrap;
 
+  @include media(lg) {
+    margin-left: 57px;
+  }
+
   @media (min-width: 1025px) {
     &:hover {
       text-decoration-line: underline;
       text-underline-position: under;
       cursor: pointer;
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .root {
-    margin: 0 0 0 82px;
-  }
-  .container li {
-    margin-right: 30px;
-  }
-  .tel {
-    margin-left: 57px;
-  }
-}
-@media (max-width: 450px) {
-  .root {
-    margin: 0 0 0 0;
-  }
-  .container {
-    display: none;
   }
 }

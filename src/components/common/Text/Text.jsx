@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import modsClasses from '../../../utils/modsClasses';
+import modsClasses from 'utils/modsClasses';
 import s from './Text.module.scss';
-const Text = ({ className, children, size }) => {
+const Text = ({ as: As, className, children, size }) => {
   const mods = modsClasses(s, { size });
-  return <div className={cx(s.root, className, mods)}>{children}</div>;
+  return <As className={cx(s.root, className, mods)}>{children}</As>;
 };
 Text.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
-  size: PropTypes.oneOf(['normal', 'small', 'big', 'normal']),
+  size: PropTypes.oneOf(['normal', 'small', 'big', 'h1', 'h2', 'h3']),
 };
 Text.defaultProps = {
   size: 'normal',
+  as: 'div',
 };
 export default Text;
