@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Btn from 'components/common/Btn';
 import Text from 'components/common/Text';
+
 import s from './Card.module.scss';
 
 const Cards = ({ item }) => {
@@ -18,7 +20,8 @@ const Cards = ({ item }) => {
         </Text>
       </div>
       <div className={s.more}>
-        <Btn color='icon' size='big' value='Подробнее'>
+        <Btn color='icon' size='big'>
+          Подробнее
           <img src='./img/svg/arrow.svg' alt='arrow' />
         </Btn>
       </div>

@@ -1,22 +1,23 @@
 import React from 'react';
-import s from './Input.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './Input.module.scss';
 
 const MyInput = ({ label, type, placeholder, onFocus, onBlur }) => {
   return (
-    <div className={s.root}>
-      <Text className={s.label}>
+    <Text className={s.root}>
+      <label className={s.label}>
         {label}
-        <Text
-          as='input'
+        <input
           type={type}
           placeholder={placeholder}
           className={s.customInput}
           onFocus={onFocus}
           onBlur={onBlur}
         />
-      </Text>
-    </div>
+      </label>
+    </Text>
   );
 };
 

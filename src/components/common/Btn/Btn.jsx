@@ -1,20 +1,19 @@
 import React from 'react';
-import s from './Btn.module.scss';
 import cx from 'classnames';
-import Text from 'components/common/Text';
 
 import modsClasses from 'utils/modsClasses';
 
-const Btn = ({ value, type, size, color, children }) => {
+import s from './Btn.module.scss';
+
+const Btn = ({ type, color, children }) => {
   const mods = modsClasses(s, {
     type,
     color,
   });
   return (
-    <Text as='button' className={cx(s.root, mods)} size={size} type={type}>
-      {value}
+    <button className={cx(s.root, mods)} type={type}>
       {children}
-    </Text>
+    </button>
   );
 };
 

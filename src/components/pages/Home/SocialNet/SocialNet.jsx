@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import s from './SocialNet.module.scss';
-import { socialNet } from 'stubs/socialNet';
-import Link from './Link';
+import React from 'react';
+
 import Text from 'components/common/Text';
+import Link from './Link';
+import { socialNet } from 'stubs/socialNet';
+
+import s from './SocialNet.module.scss';
 
 const SocialNet = () => {
-  const [links, useLinks] = useState(socialNet);
   return (
     <div className={s.root}>
       <div className={s.container}>
-          <Text as='p'>Наши социальные сети</Text>
+        <Text as='p'>Наши социальные сети</Text>
         <div className={s.link}>
           <ul>
-            {links.map((link) => (
+            {socialNet.map((link) => (
               <Link link={link} key={link.id} />
             ))}
           </ul>

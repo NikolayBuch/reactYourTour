@@ -11,5 +11,5 @@ const photoSorting = (gallery) => {
     startPos += part;
   });
   return newArr;
-}
- export default photoSorting;
+};
+export default photoSorting;

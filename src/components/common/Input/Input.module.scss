@@ -1,4 +1,6 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+@import "styles/fontMixins.scss";
+
 .root {
   display: flex;
   flex-direction: column;
@@ -6,39 +8,63 @@
   padding: 0px;
   width: 500px;
   height: 104px;
+
   @include media(lg) {
     width: 389px;
   }
+
+  @include media(d) {
+    width: 500px;
+    margin-bottom: 33px;
+  }
+
+  @include media(md) {
+    width: 389px;
+  }
+
   @include media(sm) {
     width: 278px;
     height: 74px;
   }
 }
 .customInput {
-  outline: none;
-  border: #f4f0e9;
   width: 500px;
   height: 68px;
+  padding-left: 20px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  outline: none;
   border-radius: 10px;
   background: #f9f7f4;
   border: 1px solid #f4f0e9;
-  padding-left: 20px;
-  box-sizing: border-box;
-  margin-top: 8px;
+
+  @include Normal;
+
   @media (min-width: 1025px) {
     &:hover {
       background: #f4f0e9;
       border: 1px solid #f4f0e9;
     }
   }
+
   &:focus {
     color: #1b1f2b;
     border: 1px solid #a6a6a6;
   }
+
   @include media(lg) {
     width: 389px;
     height: 68px;
   }
+
+  @include media(d) {
+    width: 500px;
+  }
+
+  @include media(md) {
+    width: 389px;
+  }
+
   @include media(sm) {
     width: 278px;
     height: 43px;

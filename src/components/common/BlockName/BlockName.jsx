@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './BlockName.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './BlockName.module.scss';
 
 const BlockName = ({ title, description }) => {
   return (

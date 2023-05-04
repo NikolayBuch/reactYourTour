@@ -1,20 +1,17 @@
 import React from 'react';
-import s from './Textarea.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './Textarea.module.scss';
 
 const Textarea = () => {
   return (
-    <div className={s.root}>
-      <Text as='label'>
+    <Text className={s.root}>
+      <label>
         Комментарий
-        <Text
-          as='textarea'
-          name='comment'
-          id='comment'
-          cols='30'
-          rows='10'></Text>
-      </Text>
-    </div>
+        <textarea name='comment' id='comment' cols='30' rows='10' />
+      </label>
+    </Text>
   );
 };
 

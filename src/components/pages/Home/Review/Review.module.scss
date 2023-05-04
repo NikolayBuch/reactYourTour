@@ -1,27 +1,24 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+
 .root {
-  width: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: auto;
+  height: auto;
 }
+
 .wraps {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   width: auto;
-  height: 673px;
+  height: auto;
 
-  @include media(lg) {
-    height: 841px;
-  }
-  @include media(sm) {
+  @include media(d) {
     flex-direction: column;
-    width: 360px;
-    height: 1018px;
     align-items: center;
   }
 }

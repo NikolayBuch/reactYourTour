@@ -1,9 +1,12 @@
 import React from 'react';
-import BlockName from 'components/common/BlockName';
-import s from './TravelPhoto.module.scss';
-import { gallery } from 'stubs/gallery';
+
 import photoSorting from 'utils/photoSorting';
-import ImageB1 from './Img/Img';
+
+import BlockName from 'components/common/BlockName';
+import Img from './Img';
+import { gallery } from 'stubs/gallery';
+
+import s from './TravelPhoto.module.scss';
 
 const TravelPhoto = () => {
   const photo = photoSorting(gallery);
@@ -18,7 +21,7 @@ const TravelPhoto = () => {
         {photo.map((section, index) => (
           <div className={s.block} key={index}>
             {section.items.map((block) => (
-              <ImageB1
+              <Img
                 block={block}
                 line={index % 2 === 0 ? '1' : '2'}
                 key={block.id}

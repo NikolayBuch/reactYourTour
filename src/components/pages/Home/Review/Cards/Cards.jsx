@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './Cards.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './Cards.module.scss';
 
 const cards = ({ item }) => {
   return (

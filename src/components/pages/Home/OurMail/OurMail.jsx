@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './OurMail.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './OurMail.module.scss';
 
 const OurMail = () => {
   return (
@@ -11,8 +13,8 @@ const OurMail = () => {
           Пора в путешествие вместе с нами!
         </Text>
         <Text as='p'>
-          Напиши на почту и узнай подробности на{' '}
-          <a href='yourtour@gmail.com'>yourtour@gmail.com</a>{' '}
+          Напиши на почту и узнай подробности на
+          <a href='yourtour@gmail.com'>yourtour@gmail.com</a>
         </Text>
       </div>
     </div>

@@ -1,7 +1,9 @@
 import React from 'react';
-import s from './About.module.scss';
+
 import Text from 'components/common/Text';
 import Btn from 'components/common/Btn';
+
+import s from './About.module.scss';
 
 const About = () => {
   return (
@@ -14,7 +16,9 @@ const About = () => {
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </Text>
-        <Btn size='small'  color='about' value='Найти тур' />
+        <Btn color='about'>
+          Найти тур
+        </Btn>
       </div>
     </div>
   );

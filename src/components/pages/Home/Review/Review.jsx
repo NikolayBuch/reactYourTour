@@ -1,8 +1,10 @@
 import React from 'react';
-import s from './Review.module.scss';
+
+import BlockName from 'components/common/BlockName';
 import Cards from './Cards';
 import { reviews } from 'stubs/reviews';
-import BlockName from 'components/common/BlockName';
+
+import s from './Review.module.scss';
 
 const Review = () => {
   return (

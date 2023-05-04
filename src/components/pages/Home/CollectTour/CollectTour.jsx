@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import s from './CollectTour.module.scss';
+
+import BlockName from 'components/common/BlockName';
 import Text from 'components/common/Text';
-import Input from '../../../common/Input';
-import Select from '../../../common/Select';
-import Textarea from '../../../common/Textarea';
-import RadioBtn from '../../../common/RadioBtn';
+import Input from 'components/common/Input';
+import Select from 'components/common/Select';
+import Textarea from 'components/common/Textarea';
+import RadioBtn from 'components/common/RadioBtn';
 import Agreement from './Agreement';
-import BtnTour from '../../../common/Btn/Btn';
-import BlockName from '../../../common/BlockName';
+import Btn from 'components/common/Btn';
+
+import s from './CollectTour.module.scss';
 
 const CollectTour = () => {
   const [type, setType] = useState('text');
@@ -78,8 +80,8 @@ const CollectTour = () => {
         </Text>
         <Agreement />
         <div className={s.btn}>
-          <BtnTour type='submit' value='Найти тур' />
-          <BtnTour type='reset' value='Сбросить' />
+          <Btn type='submit'>Найти тур</Btn>
+          <Btn type='reset'>Сбросить</Btn>
         </div>
       </form>
     </div>

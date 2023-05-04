@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './RadioBtn.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './RadioBtn.module.scss';
 
 const RadioBtn = ({ label, value }) => {
   return (

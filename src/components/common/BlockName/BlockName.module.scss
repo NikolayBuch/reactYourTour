@@ -1,10 +1,12 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+
 .root {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 135px;
   margin-bottom: 100px;
+
   @include media(sm) {
     width: 318px;
     height: auto;
@@ -12,24 +14,27 @@
     margin-bottom: 50px;
   }
 }
+
 .headerInfo {
-  width: 723px;
   height: auto;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
+
   @include media(sm) {
-      width: 319px;
-      height: auto;
-      margin-bottom: 20px;
+    height: auto;
+    margin-bottom: 20px;
   }
 }
+
 .info {
   width: 418px;
-  color: #a6a6a6;
   text-align: center;
+  color: #a6a6a6;
+
   @include media(lg) {
     width: 409px;
   }
+
   @include media(sm) {
     width: 318px;
     height: 46px;

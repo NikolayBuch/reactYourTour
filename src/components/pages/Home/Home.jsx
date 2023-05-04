@@ -1,13 +1,15 @@
 import React from 'react';
-import Tour from './Tour/Tour';
-import s from './Home.module.scss';
+
 import About from './About';
+import Tour from './Tour/Tour';
 import CollectTour from './CollectTour';
 import Review from './Review';
 import TravelPhoto from './TravelPhoto';
 import Story from './Story';
 import OurMail from './OurMail';
 import SocialNet from './SocialNet';
+
+import s from './Home.module.scss';
 
 const Main = () => {
   return (

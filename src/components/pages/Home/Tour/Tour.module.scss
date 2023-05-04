@@ -1,18 +1,21 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+
 .root {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
+
 .wrapperInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 135px;
   margin-bottom: 100px;
+
   @include media(sm) {
     width: 318px;
     height: auto;
@@ -20,44 +23,61 @@
     margin-bottom: 50px;
   }
 }
+
 .headerInfo {
-  width: 723px;
   height: auto;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
+
   @include media(sm) {
-    width: 319px;
     margin-bottom: 20px;
   }
 }
+
 .navbar {
-  list-style-type: none;
   display: flex;
   margin: 6px 0px 6px 33px;
+  list-style-type: none;
+
   @include media(lg) {
     margin: 6px 0px 6px 26px;
   }
-  @include media(sm) {
-    width: 300px;
-    height: 65px;
+
+  @include media(md) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 6px 0px -4px 10px;
+    width: 500px;
+    li {
+      margin-bottom: 30px;
+    }
   }
+
+  @include media(sm) {
+    width: 300px;
+    height: 65px;
+    margin: 6px 0px -4px 10px;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
   li:first-child a {
     text-decoration: underline;
     text-underline-position: under;
     color: #efa501;
   }
+
   a {
+    padding-right: 30px;
     text-decoration: none;
     color: #1b1f2b;
-    padding-right: 30px;
+
     @include media(sm) {
       padding-right: 10px;
     }
+
     @media (min-width: 1025px) {
       &:hover {
         text-decoration: underline;
@@ -67,23 +87,26 @@
     }
   }
 }
+
 .tour {
-  max-width: 1170px;
-  height: auto;
-  padding: 0px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  z-index: 1;
   justify-content: center;
   grid-template-columns: 370px 370px 370px;
   grid-gap: 30px;
+  max-width: 1170px;
+  height: auto;
+  padding: 0px;
+
   @include media(lg) {
     grid-template-columns: 450px 450px;
     grid-gap: 18px;
   }
+
   @include media(sm) {
-    height: 1998px;
     flex-direction: column;
+    height: 1998px;
   }
 }

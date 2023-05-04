@@ -1,35 +1,35 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+
 .root {
-  width: 100%;
-  height: 88px;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  width: 100%;
+  height: 88px;
 }
+
 .container {
-  width: 1168px;
-  height: 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1168px;
+  width: 90%;
+  height: 31px;
   margin: 0 auto;
   padding: 3px 1px 0px 2px;
-  @include media(lg) {
-    width: 910px;
-  }
+
   @include media(sm) {
-    width: 320px;
     height: 23px;
   }
+
   img {
     width: 181.8px;
     height: 30.2px;
-    @include media (sm){
+
+    @include media(sm) {
       width: 133px;
       height: 22px;
     }
   }
 }
-
-

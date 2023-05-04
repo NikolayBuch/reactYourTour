@@ -1,40 +1,47 @@
 @import 'styles/media.scss';
+
 .photo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
   width: 100%;
   height: auto;
+  padding: 0px;
 }
+
 .photoBlok {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
+  width: 100%;
 }
+
 .block {
+  display: flex;
   flex-direction: row;
   width: 100%;
   padding: 0 20px;
-  box-sizing: border-box;
-  display: flex;
   margin: 0 -15px;
+  box-sizing: border-box;
+
   @include media(lg) {
     margin: 0 -10px;
-    width: 984px;
+    width: 100%;
     padding: 0;
   }
+
   @include media(sm) {
     margin: 0 -5px;
     width: 318px;
     padding: 0;
   }
 }
+
 .block:nth-child(2){
   margin-bottom: 30px;
   margin-top: 30px;
+  
   @include media(sm){
     margin-bottom: 18px;
     margin-top: 18px;

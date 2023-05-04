@@ -1,14 +1,26 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
+@import "styles/fontMixins.scss";
+
 .root {
   display: flex;
-  width: 1030px;
-  height: 188px;
   flex-direction: column;
   justify-content: space-between;
+  width: 1030px;
+  height: 188px;
   margin-bottom: 33px;
-  @include media(lg) { 
+
+  @include media(lg) {
     width: 798px;
   }
+
+  @include media(d) {
+    width: 500px;
+  }
+
+  @include media(md) {
+    width: 389px;
+  }
+
   @include media(sm) {
     width: 278px;
     height: 163px;
@@ -18,24 +30,36 @@
   textarea {
     width: 1030px;
     height: 152px;
-    border: none;
-    background: #f9f7f4;
-    border-radius: 10px;
-    border: none;
     padding: 20px;
-    box-sizing: border-box;
     margin-top: 8px;
+    box-sizing: border-box;
+    background: #f9f7f4;
+    border: none;
+    border-radius: 10px;
+
+    @include Normal;
+
     @media (min-width: 1025px) {
       &:hover {
         background: #f4f0e9;
         border: 1px solid #a6a6a6;
       }
     }
+
     @include media(lg) {
       width: 798px;
       background: #f9f7f4;
       border-radius: 10px;
     }
+
+    @include media(d) {
+      width: 500px;
+    }
+
+    @include media(md) {
+      width: 389px;
+    }
+
     @include media(sm) {
       width: 278px;
       height: 132px;

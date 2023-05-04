@@ -1,8 +1,10 @@
 import React from 'react';
-import Btn from 'components/common/Btn';
-import s from './Card.module.scss';
-import Link from './Link';
+
 import Text from 'components/common/Text';
+import Link from './Link';
+import Btn from 'components/common/Btn';
+
+import s from './Card.module.scss';
 
 const Cards = ({ item }) => {
   const links = item.link;
@@ -24,7 +26,8 @@ const Cards = ({ item }) => {
         </Text>
       </div>
       <div className={s.btn}>
-        <Btn color='icon' size='big' value='Подробнее'>
+        <Btn color='icon' size='big'>
+          Подробнее
           <img src='./img/svg/arrow.svg' alt='arrow' />
         </Btn>
         <Text className={s.link}>

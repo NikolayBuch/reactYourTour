@@ -1,18 +1,20 @@
 import React from 'react';
-import s from './Agreement.module.scss';
+
 import Text from 'components/common/Text';
+
+import s from './Agreement.module.scss';
 
 const Agreement = () => {
   return (
-    <div className={s.root}>
+    <Text size='small' className={s.root}>
       <input id='checkbox' type='checkbox' className={s.checkbox} />
-      <Text as='label' size='small' htmlFor='checkbox'>
+      <label htmlFor='checkbox'>
         <p>
           Нажимая кнопку, я принимаю условия{' '}
-          <a href='Лицензионного договора'> Лицензионного договора</a>
+          <a href='Лицензионный договор'> Лицензионного договора</a>
         </p>
-      </Text>
-    </div>
+      </label>
+    </Text>
   );
 };
 

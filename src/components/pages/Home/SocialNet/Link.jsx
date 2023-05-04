@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Text from 'components/common/Text';
 
 const Link = ({ link }) => {

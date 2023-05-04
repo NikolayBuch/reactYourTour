@@ -1,13 +1,16 @@
-.container {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.story {
-  width: auto;
-  height: auto;
+.root {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  max-width: 1170px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }

@@ -1,7 +1,9 @@
 @use 'sass:map';
 $breakpoints: (
   lg: 1199,
-  sm: 450,
+  d: 991,
+  md: 767,
+  sm: 575,
 ) !default;
 
 
