@@ -27,7 +27,7 @@
       cursor: pointer;
     }
 
-    &:hover .fon {
+    &:hover .bg {
       transform: scale(1.2);
     }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.fon {
+.bg {
   position: absolute;
   z-index: -1;
   width: 100%;

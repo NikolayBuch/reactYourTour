@@ -129,7 +129,7 @@
   }
 }
 
-.fon {
+.bg {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -145,7 +145,7 @@
 }
 
 @media (min-width: 1025px) {
-  .root:hover .fon {
+  .root:hover .bg {
     transform: scale(1.2);
     cursor: pointer;
   }

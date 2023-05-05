@@ -41,7 +41,7 @@
   display: inline-block;
 
   @include media(sm) {
-    width: 326px;
+    width: 314px;
     height: 23px;
 
     img {
@@ -89,6 +89,6 @@
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }

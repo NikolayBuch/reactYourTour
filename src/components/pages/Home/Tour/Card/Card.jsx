@@ -8,7 +8,7 @@ import s from './Card.module.scss';
 const Cards = ({ item }) => {
   return (
     <div className={s.root}>
-      <div className={s.fon}>
+      <div className={s.bg}>
         <img src={`./img/png/${item.img}`} alt='Tour' />
       </div>
       <div className={s.info}>
