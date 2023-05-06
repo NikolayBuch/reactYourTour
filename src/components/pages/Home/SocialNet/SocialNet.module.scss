@@ -1,0 +1,94 @@
+@import "styles/media.scss";
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0px;
+  background: #f4f0e9;
+
+  @include media(sm) {
+    flex-direction: column;
+    padding: 21px 0px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  @include media(md) {
+    flex-direction: column;
+  }
+
+  p {
+    color: #a6a6a6;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 419px;
+  height: 28px;
+  list-style-type: none;
+  display: inline-block;
+
+  @include media(sm) {
+    width: 314px;
+    height: 23px;
+
+    img {
+      size: 2px;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 26px;
+    text-decoration: none;
+
+    @include media(sm) {
+      margin: 0 9px 0 0;
+    }
+  }
+
+  a {
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #1b1f2b;
+
+    @include media(sm) {
+      margin: 0 0 0 5px;
+    }
+
+    @media (min-width: 1025px) {
+      &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+        cursor: pointer;
+      }
+    }
+
+    &:active {
+      text-decoration: underline;
+      text-underline-position: under;
+      color: #efa501;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+}

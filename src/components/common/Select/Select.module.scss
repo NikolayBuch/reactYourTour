@@ -1,0 +1,86 @@
+@import "styles/media.scss";
+@import "styles/fontMixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 500px;
+  height: 104px;
+
+  @include media(lg) {
+    width: 389px;
+    height: 104px;
+  }
+
+  @include media(d) {
+    width: 500px;
+    margin-bottom: 33px;
+  }
+
+  @include media(md) {
+    width: 389px;
+  }
+
+  @include media(sm) {
+    width: 278px;
+    height: 74px;
+  }
+}
+
+.select {
+  width: 500px;
+  height: 68px;
+  margin-top: 8px;
+  padding-left: 20px;
+  appearance: none;
+  overflow: hidden;
+  background: #f9f7f4 url("../../../../public/img/svg/ic-dropdown.svg") no-repeat right;
+  background-size: 5%;
+  background-position: 454px 21px;
+  border-radius: 10px;
+  border: none;
+
+  @include Normal;
+
+  @include media(lg) {
+    width: 389px;
+    height: 68px;
+    background-size: 7%;
+    background-position: 347px 21px;
+  }
+
+  @include media(d) {
+    width: 500px;
+  }
+
+  @include media(md) {
+    width: 389px;
+  }
+
+  @include media(sm) {
+    width: 278px;
+    height: 43px;
+    background-size: 8%;
+    background-position: 246px 11px;
+  }
+
+  &:invalid {
+    padding-left: 20px;
+    appearance: none;
+    overflow: hidden;
+    color: #a6a6a6;
+    background: #f9f7f4 url("../../../../public/img/svg/ic-dropdown.svg") no-repeat right;
+    background-size: 5%;
+    background-position: 454px 21px;
+  }
+
+  @media (min-width: 1025px) {
+    &:hover {
+      background: #f4f0e9 url("../../../../public/img/svg/ic-dropdown.svg") no-repeat right;
+      background-size: 5%;
+      background-position: 454px 21px;
+    }
+  }
+}
