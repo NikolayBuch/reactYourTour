@@ -1,0 +1,235 @@
+@import "styles/media.scss";
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 50px;
+
+  &:active button:active {
+    background: #efa501;
+  }
+
+  @include media(sm) {
+    border-radius: 20px;
+  }
+
+  @media (min-width: 1025px) {
+    &:hover .bg {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    &:hover button {
+      background: #286562;
+      cursor: pointer;
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 300ms ease;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  color: #f1f3f2;
+}
+
+.size {
+  &-product {
+    width: 370px;
+    height: 531px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+
+    @include media(lg) {
+      width: 451px;
+    }
+
+    @include media(sm) {
+      width: 318px;
+      height: 318px;
+    }
+
+    .root:active button {
+      background: #efa501;
+    }
+
+    .info {
+      margin-top: 50px;
+      margin-left: 50px;
+
+      @include media(sm) {
+        margin-top: 25px;
+        margin-left: 25px;
+      }
+
+      h3 {
+        width: 270px;
+        height: 86px;
+        margin-bottom: 16px;
+
+        @include media(lg) {
+          width: 339px;
+          height: 42px;
+        }
+
+        @include media(sm) {
+          width: 268px;
+          height: 28px;
+          margin-bottom: 13px;
+        }
+      }
+    }
+
+    .btn {
+      padding: 0 0 50px 50px;
+
+      @include media(sm) {
+        padding: 0 0 0 1px;
+      }
+    }
+  }
+
+  &-story {
+    z-index: 1;
+    width: 100%;
+    height: 567px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+
+    &:nth-child(2) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @include media(sm) {
+      width: 318px;
+      height: 455px;
+
+      &:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        width: 121px;
+      }
+    }
+
+    .info {
+      margin-top: 60px;
+      margin-left: 60px;
+      margin-right: 60px;
+
+      @include media(lg) {
+        height: 394px;
+      }
+
+      @include media(sm) {
+        height: 306px;
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 554px;
+        height: auto;
+        margin-top: 37px;
+
+        @include media(lg) {
+          height: 113px;
+        }
+
+        @include media(sm) {
+          width: 263px;
+          height: 136px;
+          margin-top: 22px;
+        }
+      }
+
+      ul {
+        margin-top: 27px;
+        margin-left: 31px;
+
+        @include media(lg) {
+          margin-left: 29px;
+        }
+
+        @include media(sm) {
+          margin-top: 24px;
+          margin-left: 24px;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 60px 60px 60px;
+
+      @include media(sm) {
+        width: 130px;
+        height: 26px;
+        margin-bottom: 17px;
+        margin-left: 0px;
+        padding: 0 0 0 6px;
+      }
+    }
+
+    .link {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 322px;
+      height: 28px;
+
+      @media (min-width: 1025px) {
+        a:hover {
+          text-decoration-line: underline;
+          text-underline-position: under;
+          cursor: pointer;
+        }
+      }
+
+      @include media(md) {
+        display: none;
+      }
+
+      a {
+        margin-left: 35px;
+        text-decoration: none;
+        color: #ffffff;
+
+        &:active {
+          text-decoration-line: underline;
+          color: #efa501;
+        }
+      }
+    }
+  }
+}

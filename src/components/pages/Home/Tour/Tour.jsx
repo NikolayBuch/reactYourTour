@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Text from 'components/common/Text';
-import Card from './Card';
+import Card from 'components/common/Card';
 import { tours } from 'stubs/tours';
 import { menu } from './constants';
 
@@ -25,7 +25,7 @@ const Tour = () => {
 
       <div className={s.tour} id='Популярные'>
         {tours.map((item) => (
-          <Card item={item} key={item.id} />
+          <Card size='product' item={item} key={item.id} />
         ))}
       </div>
     </div>
