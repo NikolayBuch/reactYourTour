@@ -1,5 +1,4 @@
 @import "styles/media.scss";
-@import "styles/fontMixins.scss";
 
 .root {
   width: 235px;
@@ -7,7 +6,14 @@
   border-radius: 10px;
   border: none;
 
-  @include Normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+
+  @include media(sm) {
+    font-size: 16px;
+    line-height: 142%;
+  }
 
   @include media(md) {
     width: 134px;
@@ -22,7 +28,15 @@
     background: #ffffff;
     color: black;
 
-    @include Small;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+
+    @include media(sm) {
+      font-size: 16px;
+      line-height: 142%;
+    }
 
     &:active {
       background: #f8e6be;
@@ -50,10 +64,17 @@
     color: #fff;
     border-radius: 50px;
 
-    @include Big;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+
+    @include media(sm) {
+      font-size: 16px;
+      line-height: 142%;
+    }
 
     img {
-      margin-left: 10px;
+      margin-left: 16px;
     }
 
     @media (min-width: 1025px) {
@@ -71,7 +92,7 @@
       width: 123px;
       height: 26px;
       margin-bottom: 25px;
-      margin-left: 25px;
+      margin-left: 24px;
 
       img {
         margin-left: 16px;

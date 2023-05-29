@@ -4,14 +4,20 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin: 0 0 0 182px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 0 15.17%;
 
   @include media(lg) {
-    margin: 0 0 0 82px;
+    padding: 0 0 0 9.3%;
   }
 
   @include media(sm) {
     margin: 0 0 0 0;
+  }
+
+  @include media(d) {
+    justify-content: flex-end;
   }
 }
 

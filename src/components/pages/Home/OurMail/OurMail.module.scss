@@ -1,10 +1,7 @@
 @import "styles/media.scss";
 
 .root {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: auto;
+  width: 100%;
   margin-bottom: 135px;
   padding-top: 132px;
 
@@ -27,6 +24,14 @@
       width: 133px;
     }
   }
+}
+
+.list {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
 .info {
@@ -63,16 +68,21 @@
     height: 56px;
     margin-top: 20px;
     color: #a6a6a6;
+    margin: 23px 0 0 0;
 
     @include media(d) {
       text-align: center;
     }
-    
+
+    @include media(sm) {
+      margin: 18px 0 0 0;
+    }
   }
 
   a {
     color: #1b1f2b;
     text-decoration: none;
+    margin-left: 5px;
 
     @media (min-width: 1025px) {
       &:hover {

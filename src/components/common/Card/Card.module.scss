@@ -1,6 +1,7 @@
 @import "styles/media.scss";
+@import "styles/fontMixins.scss";
 
-.root {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -34,9 +35,7 @@
   position: absolute;
   z-index: -1;
   width: 100%;
-  width: inherit;
   height: inherit;
-  object-fit: cover;
   transform: scale(1);
   transition: transform 300ms ease;
 
@@ -46,6 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -59,17 +59,27 @@
 
 .size {
   &-product {
-    width: 370px;
-    height: 531px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    max-width: 33.33333%;
+    width: 100%;
+    padding: 15px;
 
     @include media(lg) {
-      width: 451px;
+      max-width: 50%;
+      padding: 9px;
     }
 
-    @include media(sm) {
-      width: 318px;
-      height: 318px;
+    @include media(md) {
+      max-width: 100%;
+    }
+
+    .card {
+      width: 100%;
+      height: 531px;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+
+      @include media(sm) {
+        height: 318px;
+      }
     }
 
     .root:active button {
@@ -86,25 +96,20 @@
       }
 
       h3 {
-        width: 270px;
-        height: 86px;
         margin-bottom: 16px;
 
-        @include media(lg) {
-          width: 339px;
-          height: 42px;
-        }
-
         @include media(sm) {
-          width: 268px;
-          height: 28px;
           margin-bottom: 13px;
         }
+      }
+
+      p {
+        @include Small;
       }
     }
 
     .btn {
-      padding: 0 0 50px 50px;
+      padding: 0 0 42px 30px;
 
       @include media(sm) {
         padding: 0 0 0 1px;
@@ -113,19 +118,13 @@
   }
 
   &-story {
-    z-index: 1;
     width: 100%;
-    height: 567px;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
 
     &:nth-child(2) {
       margin-top: 50px;
       margin-bottom: 50px;
     }
     @include media(sm) {
-      width: 318px;
-      height: 455px;
-
       &:nth-child(2) {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -133,6 +132,17 @@
 
       h3 {
         width: 121px;
+      }
+    }
+
+    .card {
+      z-index: 1;
+      width: 100%;
+      height: 567px;
+      background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+
+      @include media(sm) {
+        height: 455px;
       }
     }
 
@@ -189,7 +199,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 0 60px 60px 60px;
+      padding: 0 60px 55px 40px;
 
       @include media(sm) {
         width: 130px;

@@ -10,6 +10,7 @@ const Btn = ({ type, color, children }) => {
     type,
     color,
   });
+
   return (
     <button className={cx(s.root, mods)} type={type}>
       {children}

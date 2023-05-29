@@ -2,6 +2,10 @@
 
 .root {
   margin-right: 30px;
+
+  @include media(sm) {
+    margin-right: 32px;
+  }
 }
 
 .radio {
@@ -9,10 +13,15 @@
   z-index: -1;
   opacity: 0;
 
+  label {
+    margin-left: 1px;
+  }
+
   & + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    margin-left: 1px;
 
     &:before {
       content: "";

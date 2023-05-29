@@ -1,10 +1,6 @@
 @import "styles/media.scss";
 
 .root {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: auto;
 }
@@ -16,12 +12,21 @@
   margin-top: 135px;
   margin-bottom: 100px;
 
+  @include media(lg){
+    margin-bottom: 68px;
+  }
+
   @include media(sm) {
     width: 318px;
     height: auto;
-    margin-top: 75px;
+    margin-top: 76px;
     margin-bottom: 50px;
   }
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
 }
 
 .headerInfo {
@@ -36,28 +41,22 @@
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 6px 0px 6px 33px;
   list-style-type: none;
 
   @include media(lg) {
     margin: 6px 0px 6px 26px;
-  }
 
-  @include media(md) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
     li {
       margin-bottom: 30px;
     }
   }
 
   @include media(sm) {
-    width: 300px;
-    height: 65px;
-    margin: 6px 0px -4px 10px;
+    margin: 9px 0px -9px 11px;;
     li {
       margin-bottom: 10px;
     }
@@ -94,19 +93,14 @@
   justify-content: center;
   flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: 370px 370px 370px;
-  grid-gap: 30px;
-  max-width: 1170px;
   height: auto;
-  padding: 0px;
+  margin: -15px;
 
   @include media(lg) {
-    grid-template-columns: 450px 450px;
-    grid-gap: 18px;
+    margin: -9px;
   }
 
   @include media(sm) {
     flex-direction: column;
-    height: 1998px;
   }
 }

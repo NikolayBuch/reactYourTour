@@ -18,6 +18,7 @@
 
     p {
       width: 223px;
+      margin-left: 1px;
     }
   }
 
@@ -28,6 +29,10 @@
   a {
     text-decoration: none;
     color: #1b1f2b;
+
+    @include media(sm) {
+      margin-left: 1px;
+    }
 
     @media (min-width: 1025px) {
       &:hover {

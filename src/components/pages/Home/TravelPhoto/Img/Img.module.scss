@@ -1,4 +1,4 @@
-@import 'styles/media.scss';
+@import "styles/media.scss";
 
 .root {
   width: 100%;
@@ -33,16 +33,15 @@
   }
 }
 
-.isMobileHidden{
+.isMobileHidden {
   display: block;
 
   @include media(md) {
     display: none;
   }
-
 }
 
-.isHidden{
+.isHidden {
   display: block;
 
   @include media(lg) {
@@ -55,7 +54,7 @@
     max-width: 25%;
 
     @include media(lg) {
-      max-width: 33%;
+      max-width: 33.33333%;
     }
 
     @include media(md) {
@@ -69,9 +68,9 @@
     @include media(lg) {
       max-width: 25%;
     }
-    
+
     @include media(md) {
-      max-width: 33%;
+      max-width: 33.33333%;
     }
   }
 }
