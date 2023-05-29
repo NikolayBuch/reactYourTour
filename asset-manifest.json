@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/reactYourTour/static/css/main.f6c26877.css",
-    "main.js": "/reactYourTour/static/js/main.b22551ba.js",
+    "main.css": "/reactYourTour/static/css/main.e2e75168.css",
+    "main.js": "/reactYourTour/static/js/main.ebde7c1a.js",
     "static/media/header-img.png": "/reactYourTour/static/media/header-img.63bf8ddc99d62428919e.png",
     "index.html": "/reactYourTour/index.html",
     "static/media/chack.svg": "/reactYourTour/static/media/chack.0aecee2c06480c45854f.svg",
     "static/media/ic-dropdown.svg": "/reactYourTour/static/media/ic-dropdown.38dc7c97b539cc5edfd9.svg",
     "static/media/radio.svg": "/reactYourTour/static/media/radio.7c8099ca5d39893186e1.svg",
-    "main.f6c26877.css.map": "/reactYourTour/static/css/main.f6c26877.css.map",
-    "main.b22551ba.js.map": "/reactYourTour/static/js/main.b22551ba.js.map"
+    "main.e2e75168.css.map": "/reactYourTour/static/css/main.e2e75168.css.map",
+    "main.ebde7c1a.js.map": "/reactYourTour/static/js/main.ebde7c1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6c26877.css",
-    "static/js/main.b22551ba.js"
+    "static/css/main.e2e75168.css",
+    "static/js/main.ebde7c1a.js"
   ]
 }
