@@ -64,6 +64,7 @@
 
     @include media(md) {
       margin-bottom: 10px;
+      padding-right: 0;
     }
 
     &:first-child a {
@@ -75,7 +76,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        padding-top: 2px;
+        height: 2px;
         background: #efa501;
         transform: scaleX(1);
       }
@@ -90,6 +91,7 @@
 
     @include media(md) {
       padding-right: 10px;
+      padding-bottom: 3px;
     }
 
     &::after {
@@ -98,7 +100,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      padding-top: 2px;
+      height: 2px;
       background: #1b1f2b;
       transition: transform 300ms ease;
       transform: scaleX(0);

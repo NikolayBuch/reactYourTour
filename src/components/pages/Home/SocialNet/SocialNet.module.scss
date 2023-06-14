@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1168px;
-  width: 90%;
+  width: 100%;
 
   @include media(md) {
     flex-direction: column;
@@ -38,7 +38,7 @@
   list-style-type: none;
 
   @include media(md) {
-    width: auto;
+    width: 317px;
     height: 35px;
 
     img {
@@ -73,7 +73,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      padding-top: 1px;
+      height: 1px;
       background: #1b1f2b;
       transition: color 300ms ease, background 300ms ease, transform 300ms ease;
       transform: scaleX(0);
@@ -81,9 +81,10 @@
     }
 
     @include hover {
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
+
       &:hover::after {
         transform: scaleX(1);
       }

@@ -14,13 +14,11 @@
     max-width: 1200px;
 
     @include media(lg) {
-      max-width: 1024px;
-      padding: 0 53px;
+      max-width: 948px;
     }
 
     @include media(md) {
-      max-width: 360px;
-      padding: 0 21px;
+      max-width: 348px;
     }
   }
 

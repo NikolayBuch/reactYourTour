@@ -34,6 +34,7 @@
   @include media(lg) {
     margin: 0 -10px;
   }
+
   @include media(md) {
     flex-direction: column;
   }

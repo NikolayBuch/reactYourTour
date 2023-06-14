@@ -5,17 +5,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  box-sizing: border-box;
   max-width: 50%;
   width: 100%;
-  padding: 0 15px;
+  padding: 15px;
 
   @include media(lg) {
-    padding: 3px 9px;
+    padding: 9px;
   }
 
   @include media(md) {
     max-width: 100%;
-    padding: 6px 0;
+    padding: 0;
+
+    &:first-child {
+      padding-bottom: 16px;
+    }
   }
 
   .item {
@@ -25,7 +30,7 @@
     height: 100%;
     background: #f4f0e9;
     border-radius: 50px;
-    padding: 34px 40px;
+    padding: 37px 40px;
 
     @include media(md) {
       border-radius: 20px;
@@ -40,9 +45,18 @@
 
 .review {
   height: auto;
+  margin-bottom: 44px;
+
+  @include media(md) {
+    margin-bottom: 17px;
+  }
 
   p {
     margin-bottom: 29px;
+
+    @include media(lg) {
+      margin-bottom: 27px;
+    }
 
     @include media(md) {
       margin-bottom: 25px;
@@ -55,11 +69,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 145px;
   margin-top: auto;
 
   @include media(md) {
-    height: 93px;
   }
 
   h3 {

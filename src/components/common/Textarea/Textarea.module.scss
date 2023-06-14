@@ -20,7 +20,7 @@
     margin-top: 8px;
     box-sizing: border-box;
     background: #f9f7f4;
-    border: none;
+    border: 1px solid #f4f0e9;
     border-radius: 10px;
     resize: none;
     outline: none;
@@ -40,10 +40,10 @@
     @include hover {
       &:hover {
         background: #f4f0e9;
-        outline: 0;
       }
     }
-    &:focus{
+
+    &:focus {
       border: 1px solid #a6a6a6;
     }
   }
