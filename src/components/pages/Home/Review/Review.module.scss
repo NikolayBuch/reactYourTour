@@ -1,7 +1,7 @@
 @import "styles/media.scss";
 
 .root {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -18,12 +18,9 @@
     margin: 0 -9px;
   }
 
-  @include media(d) {
+  @include media(md) {
     flex-direction: column;
     align-items: center;
-  }
-
-  @include media(sm) {
     margin: -6px 0;
   }
 }

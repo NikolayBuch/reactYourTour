@@ -5,7 +5,7 @@
   padding: 33px 0px;
   background: #f4f0e9;
 
-  @include media(sm) {
+  @include media(md) {
     flex-direction: column;
     padding: 21px 0px;
   }
@@ -37,8 +37,8 @@
   height: 28px;
   list-style-type: none;
 
-  @include media(sm) {
-    width: 318px;
+  @include media(md) {
+    width: auto;
     height: 35px;
 
     img {
@@ -54,7 +54,7 @@
     margin-right: 26px;
     text-decoration: none;
 
-    @include media(sm) {
+    @include media(md) {
       margin: 0 15px 0 0;
     }
   }
@@ -66,22 +66,22 @@
     text-align: center;
     color: #1b1f2b;
 
-    @include media(sm) {
+    @include media(md) {
       margin: 0 0 0 5px;
     }
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         text-decoration: underline;
         text-underline-position: under;
         cursor: pointer;
       }
-    }
 
-    &:active {
-      text-decoration: underline;
-      text-underline-position: under;
-      color: #efa501;
+      &:active {
+        text-decoration: underline;
+        text-underline-position: under;
+        color: #efa501;
+      }
     }
   }
 

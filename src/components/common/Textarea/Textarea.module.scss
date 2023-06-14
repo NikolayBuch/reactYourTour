@@ -8,7 +8,7 @@
   height: 188px;
   margin-bottom: 33px;
 
-  @include media(sm) {
+  @include media(md) {
     height: 163px;
     margin-bottom: 28px;
   }
@@ -22,22 +22,26 @@
     background: #f9f7f4;
     border: none;
     border-radius: 10px;
+    resize: none;
+    outline: none;
+    transition: background 300ms ease;
 
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
 
-    @include media(sm) {
+    @include media(md) {
       height: 132px;
 
       font-size: 16px;
       line-height: 142%;
     }
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         background: #f4f0e9;
         border: 1px solid #a6a6a6;
+        outline: 0;
       }
     }
   }

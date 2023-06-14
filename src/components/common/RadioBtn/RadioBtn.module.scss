@@ -3,7 +3,7 @@
 .root {
   margin-right: 30px;
 
-  @include media(sm) {
+  @include media(md) {
     margin-right: 32px;
   }
 }
@@ -37,7 +37,7 @@
       background-position: center center;
       background-size: 50%;
 
-      @include media(sm) {
+      @include media(md) {
         width: 16px;
         height: 16px;
       }

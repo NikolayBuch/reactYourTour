@@ -8,7 +8,7 @@
     padding: 0 10px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     padding: 0 5px;
   }
 }
@@ -20,7 +20,7 @@
   object-fit: cover;
   border-radius: 50px;
 
-  @include media(sm) {
+  @include media(md) {
     height: 110px;
     border-radius: 20px;
   }

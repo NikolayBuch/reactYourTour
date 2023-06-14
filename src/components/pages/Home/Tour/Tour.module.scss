@@ -12,11 +12,11 @@
   margin-top: 135px;
   margin-bottom: 100px;
 
-  @include media(lg){
+  @include media(lg) {
     margin-bottom: 68px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     width: 318px;
     height: auto;
     margin-top: 76px;
@@ -24,7 +24,7 @@
   }
 }
 
-.list{
+.list {
   display: flex;
   flex-direction: column;
 }
@@ -34,7 +34,7 @@
   margin-bottom: 30px;
   text-align: center;
 
-  @include media(sm) {
+  @include media(md) {
     margin-bottom: 20px;
   }
 }
@@ -55,8 +55,9 @@
     }
   }
 
-  @include media(sm) {
-    margin: 9px 0px -9px 11px;;
+  @include media(md) {
+    margin: 9px 0px -9px 11px;
+
     li {
       margin-bottom: 10px;
     }
@@ -73,15 +74,14 @@
     text-decoration: none;
     color: #1b1f2b;
 
-    @include media(sm) {
+    @include media(md) {
       padding-right: 10px;
     }
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         text-decoration: underline;
         text-underline-position: under;
-        cursor: pointer;
       }
     }
   }
@@ -100,7 +100,7 @@
     margin: -9px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     flex-direction: column;
   }
 }

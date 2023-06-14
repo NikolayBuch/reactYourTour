@@ -7,7 +7,7 @@
   margin-top: 135px;
   margin-bottom: 100px;
 
-  @include media(sm) {
+  @include media(md) {
     width: 318px;
     height: auto;
     margin-top: 75px;
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
   text-align: center;
 
-  @include media(sm) {
+  @include media(md) {
     height: auto;
     margin-bottom: 20px;
   }
@@ -36,7 +36,7 @@
     width: 409px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     width: 318px;
     height: 46px;
   }

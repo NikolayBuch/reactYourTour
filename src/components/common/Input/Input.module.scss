@@ -13,11 +13,8 @@
     padding: 0 10px;
   }
 
-  @include media(d) {
+  @include media(md) {
     max-width: 100%;
-  }
-
-  @include media(sm) {
     margin-bottom: 31px;
   }
 }
@@ -36,17 +33,18 @@
   border-radius: 10px;
   background: #f9f7f4;
   border: 1px solid #f4f0e9;
+  transition: background 300ms ease;
 
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
 
-  @include media(sm) {
+  @include media(md) {
     font-size: 16px;
     line-height: 142%;
   }
 
-  @media (min-width: 1025px) {
+  @include hover {
     &:hover {
       background: #f4f0e9;
       border: 1px solid #f4f0e9;
@@ -58,11 +56,12 @@
     border: 1px solid #a6a6a6;
   }
 
-  @include media(sm) {
+  @include media(md) {
     height: 43px;
     padding-left: 10px;
   }
 }
+
 .label {
   display: block;
   width: 100%;
@@ -72,7 +71,7 @@
   font-size: 20px;
   line-height: 142%;
 
-  @include media(sm) {
+  @include media(md) {
     font-size: 16px;
     line-height: 142%;
   }

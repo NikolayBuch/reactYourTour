@@ -13,10 +13,6 @@
     padding: 3px 9px;
   }
 
-  @include media(d) {
-    max-width: 75%;
-  }
-
   @include media(md) {
     max-width: 100%;
     padding: 6px 0;
@@ -28,7 +24,7 @@
     border-radius: 50px;
     padding: 34px 40px;
 
-    @include media(sm) {
+    @include media(md) {
       border-radius: 20px;
       padding: 21px 21px;
     }
@@ -46,18 +42,17 @@
     height: 616px;
   }
 
-  @include media(d) {
+  @include media(md) {
     height: auto;
   }
 
-  p{
+  p {
     margin-bottom: 29px;
 
-    @include media(sm){
+    @include media(md) {
       margin-bottom: 25px;
     }
   }
-
 }
 
 .name {
@@ -67,7 +62,7 @@
   align-items: flex-end;
   height: 145px;
 
-  @include media(sm) {
+  @include media(md) {
     height: 93px;
   }
 
@@ -78,6 +73,7 @@
       margin-bottom: 8px;
     }
   }
+
   div {
     width: 415px;
     height: 75px;
@@ -86,7 +82,7 @@
       width: 295px;
     }
 
-    @include media(sm) {
+    @include media(md) {
       width: 283px;
       height: 59px;
     }

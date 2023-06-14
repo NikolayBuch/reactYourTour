@@ -7,7 +7,7 @@
   height: 831px;
   background: url("../../../../../public/img/png/header-img.png") center/ cover no-repeat;
 
-  @include media(sm) {
+  @include media(md) {
     height: 488px;
   }
 }
@@ -19,7 +19,7 @@
   width: auto;
   height: 743px;
 
-  @include media(sm) {
+  @include media(md) {
     height: 488px;
   }
 }
@@ -32,8 +32,8 @@
   color: #ffffff;
   text-align: center;
 
-  @include media(sm) {
-    width: auto;
+  @include media(md) {
+    width: 290px;
     height: 114px;
     margin: 140px 0px 40px 0px;
   }
@@ -50,7 +50,7 @@
     width: 457px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     width: 275px;
     height: 69px;
     margin: 0px 0px 40px 0px;

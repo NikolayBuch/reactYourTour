@@ -12,11 +12,8 @@
     padding: 0 0 0 9.3%;
   }
 
-  @include media(sm) {
-    margin: 0 0 0 0;
-  }
-
   @include media(d) {
+    margin: 0 0 0 0;
     justify-content: flex-end;
   }
 }
@@ -42,11 +39,10 @@
       text-decoration: none;
       color: #ffffff;
 
-      @media (min-width: 1025px) {
+      @include hover {
         &:hover {
           text-decoration-line: underline;
           text-underline-position: under;
-          cursor: pointer;
         }
       }
     }
@@ -63,11 +59,10 @@
     margin-left: 19px;
   }
 
-  @media (min-width: 1025px) {
+  @include hover {
     &:hover {
       text-decoration-line: underline;
       text-underline-position: under;
-      cursor: pointer;
     }
   }
 }

@@ -5,19 +5,20 @@
   height: 58px;
   border-radius: 10px;
   border: none;
+  transition: background 300ms ease, color 300ms ease;
 
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
 
-  @include media(sm) {
+  @include media(md) {
     font-size: 16px;
     line-height: 142%;
+    width: 134px;
+    height: 47px;
   }
 
   @include media(md) {
-    width: 134px;
-    height: 47px;
   }
 }
 
@@ -33,21 +34,21 @@
     line-height: 142%;
     letter-spacing: -0.01em;
 
-    @include media(sm) {
+    @include media(md) {
       font-size: 16px;
       line-height: 142%;
     }
 
-    &:active {
-      background: #f8e6be;
-      color: #fff;
-    }
-
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         background: #efa501;
         color: #fff;
         cursor: pointer;
+      }
+
+      &:active {
+        background: #f8e6be;
+        color: #fff;
       }
     }
   }
@@ -68,7 +69,7 @@
     font-size: 23px;
     line-height: 122%;
 
-    @include media(sm) {
+    @include media(md) {
       font-size: 16px;
       line-height: 142%;
     }
@@ -77,15 +78,15 @@
       margin-left: 16px;
     }
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         background: #286562;
         cursor: pointer;
       }
-    }
 
-    &:active {
-      background: #efa501;
+      &:active {
+        background: #efa501;
+      }
     }
 
     @include media(sm) {
@@ -100,28 +101,29 @@
     }
   }
 }
+
 .type {
   &-submit {
     margin-right: 30px;
     background: #286562;
     color: #ffffff;
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         background: #3b7e7b;
         cursor: pointer;
       }
-    }
 
-    &:active {
-      background: #627f7e;
+      &:active {
+        background: #627f7e;
+      }
     }
 
     @include media(lg) {
       margin-right: 29px;
     }
 
-    @include media(sm) {
+    @include media(md) {
       margin-right: 9px;
     }
   }
@@ -130,15 +132,15 @@
     background: #e0f0e5;
     color: #286562;
 
-    @media (min-width: 1025px) {
+    @include hover {
       &:hover {
         background: #f1f3f2;
         cursor: pointer;
       }
-    }
 
-    &:active {
-      background: #d9dfdb;
+      &:active {
+        background: #d9dfdb;
+      }
     }
   }
 }

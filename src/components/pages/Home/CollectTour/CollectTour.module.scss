@@ -17,7 +17,7 @@
     padding: 60px;
   }
 
-  @include media(sm) {
+  @include media(md) {
     height: 1110px;
     margin-top: -10px;
     padding: 20px;
@@ -34,7 +34,7 @@
   @include media(lg) {
     margin: 0 -10px;
   }
-  @include media(d) {
+  @include media(md) {
     flex-direction: column;
   }
 }
@@ -61,7 +61,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
   }
 
-  @include media(sm) {
+  @include media(md) {
     height: 58px;
     margin-bottom: 25px;
   }
