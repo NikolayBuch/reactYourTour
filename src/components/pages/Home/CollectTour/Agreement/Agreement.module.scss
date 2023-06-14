@@ -23,24 +23,39 @@
   }
 
   a {
+    position: relative;
     text-decoration: none;
     color: #1b1f2b;
-    transition: color 300ms ease;
 
-    @include media(sm) {
-      margin-left: 1px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 1px;
+      background: #1b1f2b;
+      transition: color 300ms ease, background 300ms ease, transform 300ms ease;
+      transform: scaleX(0);
     }
 
     @include hover {
-      &:hover {
-        text-decoration-line: underline;
-        text-underline-offset: 3px;
+      &:hover::after {
+        transform: scaleX(1);
       }
 
-      &:active {
-        text-decoration-line: underline;
+      &:active{
         color: #286562;
       }
+
+      &:active::after {
+        transform: scaleX(1);
+        background:#286562;
+      }
+    }
+
+    @include media(sm) {
+      margin-left: 1px;
     }
   }
 }

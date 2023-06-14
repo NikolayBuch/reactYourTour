@@ -49,28 +49,42 @@
 
   @include media(lg) {
     margin: 6px 0px 6px 26px;
-
-    li {
-      margin-bottom: 30px;
-    }
   }
 
   @include media(md) {
     margin: 9px 0px -9px 11px;
+  }
 
-    li {
+  li {
+    padding-right: 30px;
+
+    @include media(lg) {
+      margin-bottom: 30px;
+    }
+
+    @include media(md) {
       margin-bottom: 10px;
+    }
+
+    &:first-child a {
+      color: #efa501;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 2px;
+        background: #efa501;
+        transform: scaleX(1);
+      }
     }
   }
 
-  li:first-child a {
-    text-decoration: underline;
-    text-underline-position: under;
-    color: #efa501;
-  }
-
   a {
-    padding-right: 30px;
+    position: relative;
+    padding-bottom: 6px;
     text-decoration: none;
     color: #1b1f2b;
 
@@ -78,10 +92,21 @@
       padding-right: 10px;
     }
 
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 2px;
+      background: #1b1f2b;
+      transition: transform 300ms ease;
+      transform: scaleX(0);
+    }
+
     @include hover {
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
+      &:hover::after {
+        transform: scaleX(1);
       }
     }
   }

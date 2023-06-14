@@ -62,6 +62,7 @@
     max-width: 33.33333%;
     width: 100%;
     padding: 15px;
+    cursor: pointer;
 
     @include media(lg) {
       max-width: 50%;
@@ -224,22 +225,49 @@
       }
 
       a {
+        position: relative;
         margin-left: 35px;
         text-decoration: none;
         color: #ffffff;
         transition: color 300ms ease;
 
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding-top: 1px;
+          background: #ffffff;
+          transition: color 300ms ease, background 300ms ease, transform 300ms ease;
+          transform: scaleX(0);
+        }
+
         @include hover {
-          &:hover {
-            text-decoration-line: underline;
-            text-underline-position: under;
+          &:hover::after {
+            transform: scaleX(1);
           }
 
           &:active {
-            text-decoration-line: underline;
             color: #efa501;
           }
+
+          &:active::after {
+            background: #efa501;
+          }
         }
+
+        // @include hover {
+        //   &:hover {
+        //     text-decoration-line: underline;
+        //     text-underline-position: under;
+        //   }
+
+        //   &:active {
+        //     text-decoration-line: underline;
+        //     color: #efa501;
+        //   }
+        // }
       }
     }
   }

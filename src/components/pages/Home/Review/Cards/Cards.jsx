@@ -8,7 +8,7 @@ const cards = ({ item }) => {
   return (
     <div className={s.root}>
       <div className={s.item}>
-        <Text as='p' size='big' className={s.review} isHtml>
+        <Text size='big' className={s.review} isHtml>
           {item.review}
         </Text>
         <div className={s.name}>

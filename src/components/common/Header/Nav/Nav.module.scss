@@ -12,7 +12,7 @@
     padding: 0 0 0 9.3%;
   }
 
-  @include media(d) {
+  @include media(md) {
     margin: 0 0 0 0;
     justify-content: flex-end;
   }
@@ -23,7 +23,7 @@
   align-items: center;
   list-style-type: none;
 
-  @include media(d) {
+  @include media(md) {
     display: none;
   }
 
@@ -36,13 +36,26 @@
     }
 
     a {
+      position: relative;
+      padding-bottom: 2px;
       text-decoration: none;
       color: #ffffff;
 
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 1px;
+        background: #ffffff;
+        transition: transform 300ms ease;
+        transform: scaleX(0);
+      }
+
       @include hover {
-        &:hover {
-          text-decoration-line: underline;
-          text-underline-position: under;
+        &:hover::after {
+          transform: scaleX(1);
         }
       }
     }
@@ -50,6 +63,7 @@
 }
 
 .tel {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
   margin-left: 134px;
@@ -59,10 +73,21 @@
     margin-left: 19px;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1px;
+    background: #ffffff;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+  }
+
   @include hover {
-    &:hover {
-      text-decoration-line: underline;
-      text-underline-position: under;
+    &:hover::after {
+      transform: scaleX(1);
     }
   }
 }

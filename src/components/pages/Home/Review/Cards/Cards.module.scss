@@ -19,7 +19,10 @@
   }
 
   .item {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
     background: #f4f0e9;
     border-radius: 50px;
     padding: 34px 40px;
@@ -36,15 +39,7 @@
 }
 
 .review {
-  height: 448px;
-
-  @include media(lg) {
-    height: 616px;
-  }
-
-  @include media(md) {
-    height: auto;
-  }
+  height: auto;
 
   p {
     margin-bottom: 29px;
@@ -61,6 +56,7 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 145px;
+  margin-top: auto;
 
   @include media(md) {
     height: 93px;

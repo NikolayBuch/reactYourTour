@@ -74,21 +74,35 @@
   }
 
   a {
+    position: relative;
     color: #1b1f2b;
     text-decoration: none;
     margin-left: 5px;
     transition: color 300ms ease;
 
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 1px;
+      background: #1b1f2b;
+      transition: color 300ms ease, background 300ms ease, transform 300ms ease;
+      transform: scaleX(0);
+    }
+
     @include hover {
-      &:hover {
-        text-decoration: underline;
-        text-underline-offset: 2px;
-        color: #1b1f2b;
+      &:hover::after {
+        transform: scaleX(1);
       }
 
       &:active {
-        text-decoration: underline;
         color: #286562;
+      }
+
+      &:active::after {
+        background: #286562;
       }
     }
   }

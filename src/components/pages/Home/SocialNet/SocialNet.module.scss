@@ -60,28 +60,37 @@
   }
 
   a {
+    position: relative;
     align-items: center;
     margin-left: 10px;
     text-decoration: none;
     text-align: center;
     color: #1b1f2b;
 
-    @include media(md) {
-      margin: 0 0 0 5px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 1px;
+      background: #1b1f2b;
+      transition: color 300ms ease, background 300ms ease, transform 300ms ease;
+      transform: scaleX(0);
+      cursor: pointer;
     }
 
     @include hover {
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
+      &:hover{
         cursor: pointer;
       }
-
-      &:active {
-        text-decoration: underline;
-        text-underline-position: under;
-        color: #efa501;
+      &:hover::after {
+        transform: scaleX(1);
       }
+    }
+
+    @include media(md) {
+      margin: 0 0 0 5px;
     }
   }
 
